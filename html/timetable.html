@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TimeTable</title>
+    <style>
+        body{
+            background-color: rgba(29, 30, 31, 0.925);
+        }
+        table,th, tr,td{
+            border: 2px SOLID ;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 12px;
+            background-color: rgba(168, 147, 147, 0.486);
+            }
+
+        #days{
+            background-color: aliceblue;
+        }
+
+        th{
+            background-color: rgba(177, 191, 202, 0.842);
+        }
+        th[data-exclude] {
+            background-color: rgba(181, 66, 66, 0.486); /* Reset to table background color */
+          }
+
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <div>
+        <caption><b><span style="border: 2px solid white; font-size: 35px; background-color:aquamarine">TimeTable</span></b></caption>
+        </div>
+        <Tr>
+            <th data-exclude colspan="6" class="exclude" style="height: 25px;">Semester: 4</th>
+        </Tr>
+        <tr id="days">
+            <th style="width: 20%;"></th>
+            <th >Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>            
+        </tr>
+        <tr>
+            <th>8:45-9:45</th>
+            <td>DBMS(P30)</td>
+            <td>DBMS(Lab)</td>
+            <td>DSE(Lab)</td>
+            <td>Algo(P30)</td>
+            <td>Algo(Lab)</td>
+        </tr>
+        <tr>
+            <th>9:45-10:45</th>
+            <td>EVS(P17)</td>
+            <td>DBMS(Lab)</td>
+            <td>DSE(Lab)</td>
+            <td>Algo(P30)</td>
+            <td>Algo(Lab)</td>
+        </tr>
+        <tr>
+            <th>10:45-11:45</th>
+            <td>CN(P30)</td>
+            <td>DSE(P30)</td>
+            <td>EVS(P17)</td>
+            <td>CN(Lab)</td>
+            <td>DBMS(P30)</td>
+        </tr>
+        <tr>
+            <th>11:45-12:45</th>
+            <td>CN(P30)</td>
+            <td>CN(P30)</td>
+            <td>EVS(P17)</td>
+            <td>CN(Lab)</td>
+            <td>DBMS(P30)</td>
+        </tr>
+        <tr>
+            <th>1:15-2:15</th>
+            <td>--</td>
+            <td>--</td>
+            <td>DSE(P24)</td>
+            <td>DSE(P26)</td>
+            <td>VAC(P33)</td>
+        </tr>
+        <tr>
+            <th>2:15-3:15</th>
+            <td>Algo(P29)</td>
+            <td>--</td>
+            <td>--</td>
+            <td>SEC(P16)</td>
+            <td>VAC(P33)</td>
+        </tr>
+        <tr>
+            <th>3:15-4:15</th>
+            <td>SEC(P16)</td>
+            <td>--</td>
+            <td>--</td>
+            <td>SEC(P16)</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <th>4:15-5:15</th>
+            <td>SEC(P16)</td>
+            <td>--</td>
+            <td>VAC(P33)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+    </table>
+</body>
+</html>
