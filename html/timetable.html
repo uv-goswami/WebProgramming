@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>TimeTable</title>
+    <link rel="stylesheet" href="../css/body.css" >
+    <link rel="stylesheet" href="../css/navbar.css"> 
     <style>
         body{
             background-color: rgba(29, 30, 31, 0.925);
@@ -9,6 +11,8 @@
         table,th, tr,td{
             border: 2px SOLID ;
             border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
             text-align: center;
             padding: 12px;
             background-color: rgba(168, 147, 147, 0.486);
@@ -22,15 +26,22 @@
             background-color: rgba(177, 191, 202, 0.842);
         }
         th[data-exclude] {
-            background-color: rgba(181, 66, 66, 0.486); /* Reset to table background color */
+            background-color: rgba(181, 66, 66, 0.486);
           }
 
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a class="active" href="./home.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./timetable.html">Time Table</a>
+    </nav>
     <table style="width: 100%;">
         <div>
-        <caption><b><span style="border: 2px solid white; font-size: 35px; background-color:aquamarine">TimeTable</span></b></caption>
+        <caption><b><span style="border: 2px solid white; font-size: 35px; background-color:aquamarine; ">TimeTable</span></b></caption>
         </div>
         <Tr>
             <th data-exclude colspan="6" class="exclude" style="height: 25px;">Semester: 4</th>

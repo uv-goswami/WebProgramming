@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    color: black;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(106, 98, 91, 0.774);
+    border-radius: 30px;
+    padding: 10px;     
+    margin-top: 20px;   
+}
+
+a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-size-adjust: auto;
+}
