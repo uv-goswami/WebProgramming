@@ -1,14 +1,7 @@
 body{
     background-color: #1f2023;            
-    /*background-image: url("../bg-img.jpg");*/
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
-}
-
-.dp{
-    width: 20%;
-    border-radius: 30px;
-    margin-left: 10%;
-    margin-top: 7%;
-}
+    color: white;
+}           
