@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Document</title>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/body.css">
+        <style>
+            
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+                text-align: center;
+            }
 
+            .profile-pic{
+                width: 150px;
+                height: 150px;
+                background-color: #555;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+        </style>
 
-</head>
-<body>
-    <nav class="navbar">
-        <a class="active" href="./html/home.html">Home</a>
-        <a href="./html/about.html">About</a>
-        <a href="./html/projects.html">Projects</a>
-        <a href="./html/contact.html">Contact</a>
-        <a href="./html/timetable.html">Time Table</a>
-    </nav>
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <a class="active" href="./html/home.html">Home</a>
+            <a href="./html/about.html">About</a>
+            <a href="./html/projects.html">Projects</a>
+            <a href="./html/contact.html">Contact</a>
+        </nav>
+        </header>
 
+        <main>
+            <section>
+                <img class="profile-pic" src="penguin.avif" alt="">
+                <div class="into">
+                    <h1>My name is Yuvraj Singh.</h1>
+                    <p>I'm currently pursuing BSc in Computer Science at Ramanujan College, Delhi University.</p>
+                </div>
+            </section>
+        </main>
+            
+        </div>
+        <br>
+        <hr>
 
-</body>
+        <footer>
+            <p>&copy; 2025  Penguin. All rights reserved.</p>
+        </footer>
+    </body>
 </html>
