@@ -1,4 +1,7 @@
 body{
     background-color: #1f2023;            
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
     color: white;
 }           
