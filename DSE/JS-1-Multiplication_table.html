@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { color: #2c3e50; }
+    #output { margin-top: 20px; }
+    pre { font-family: monospace; background: #ecf0f1; padding: 10px; border: 1px solid #bdc3c7; }
+  </style>
+</head>
+<body>
+
+  <h2>Multiplication Table Generator</h2>
+  <button onclick="generateTable()">Generate Multiplication Table</button>
+  
+  <div id="output"></div>
+
+  <script>
+    function generateTable() {
+      // Ask the user for a number using prompt
+      const number = prompt("Please enter a number:");
+      
+      // Ensure the input is a valid number
+      if (isNaN(number) || number === '') {
+        alert("Please enter a valid number.");
+        return;
+      }
+
+      // Generate the multiplication table
+      let table = '';
+      for (let i = 1; i <= 10; i++) {
+        table += `${number} x ${i} = ${number * i}\n`;
+      }
+
+      // Display the table in a preformatted block
+      document.getElementById('output').innerHTML = '<pre>' + table + '</pre>';
+    }
+  </script>
+
+</body>
+</html>

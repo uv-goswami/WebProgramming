@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        hr {
+            height: 5px;
+            background-color: maroon;
+            border: none;
+            width: 80%;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 5px; /* creates visible gaps */
+        }
+
+        th, td {
+            border: 2px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: yellow;
+        }
+
+        .gray {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table Example</h2>
+    <hr>
+
+    <table>
+        <tr>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Start Time</th>
+            <th>End Time</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>8:00 AM</td>
+            <td>5:00 PM</td>
+            <td>Introduction to HTML</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>Important HTML Tags</td>
+        </tr>
+
+        <tr class="gray">
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 AM</td>
+            <td>11:00 AM</td>
+            <td>CSS-1</td>
+        </tr>
+        <tr class="gray">
+            <td>11:00 AM</td>
+            <td>2:00 PM</td>
+            <td>JavaScript-1</td>
+        </tr>
+        <tr class="gray">
+            <td>2:00 PM</td>
+            <td>5:00 PM</td>
+            <td>JavaScript-2</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 AM</td>
+            <td>12 Noon</td>
+            <td>JavaScript-2</td>
+        </tr>
+
+        <tr class="gray">
+            <td rowspan="2">Thursday</td>
+            <td>8:00 AM</td>
+            <td>12 Noon</td>
+            <td>JQuery</td>
+        </tr>
+        <tr class="gray">
+            <td>1:00 PM</td>
+            <td>3:00 PM</td>
+            <td>Valedictory</td>
+        </tr>
+    </table>
+
+</body>
+</html>

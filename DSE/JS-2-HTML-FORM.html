@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator Form</title>
+</head>
+<body>
+  <form>
+    <label>First Number</label><br>
+    <input type="text" id="num1"><br><br>
+
+    <label>Second Number</label><br>
+    <input type="text" id="num2"><br><br>
+
+    <button type="button" onclick="calculate('+')">+</button>
+    <button type="button" onclick="calculate('-')">-</button>
+    <button type="button" onclick="calculate('*')">*</button>
+    <button type="button" onclick="calculate('/')">/</button>
+  </form>
+
+  <script>
+    function calculate(operator) {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers.");
+        return;
+      }
+
+      let result;
+      switch(operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          if (num2 === 0) {
+            alert("Cannot divide by zero.");
+            return;
+          }
+          result = num1 / num2;
+          break;
+      }
+
+      alert("Result: " + result);
+    }
+  </script>
+</body>
+</html>

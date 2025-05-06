@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <input type="date" id="dateInput">
+  <button id="checkDate">Check Weekend</button>
+  <p id="result"></p>
+
+  <script>
+    $('#checkDate').click(function() {
+      const date = new Date($('#dateInput').val());
+      const day = date.getDay();
+      if (day === 0 || day === 6) {
+        $('#result').text("It's a weekend!");
+      } else {
+        $('#result').text("It's a weekday.");
+      }
+    });
+  </script>
+
+</body>
+</html>

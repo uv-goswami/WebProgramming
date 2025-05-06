@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Background Change</title>
+</head>
+<body>
+  <input type="text" id="myTextbox" placeholder="Click to focus"><br><br>
+
+  <script>
+    const textbox = document.getElementById("myTextbox");
+
+    textbox.addEventListener("focus", function() {
+      textbox.style.backgroundColor = "#ffffcc"; 
+    });
+
+    textbox.addEventListener("blur", function() {
+      textbox.style.backgroundColor = ""; 
+    });
+  </script>
+</body>
+</html>

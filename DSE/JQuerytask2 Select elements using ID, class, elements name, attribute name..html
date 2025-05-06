@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <p id="idExample">Selected using ID</p>
+  <p class="classExample">Selected using class</p>
+  <div name="nameExample">Selected using name</div>
+  <span data-custom="true">Selected using attribute</span>
+
+  <script>
+    $('#idExample').css("color", "green");
+    $('.classExample').css("font-weight", "bold");
+    $('[name="nameExample"]').css("background-color", "yellow");
+    $('[data-custom="true"]').css("text-decoration", "underline");
+  </script>
+
+</body>
+</html>

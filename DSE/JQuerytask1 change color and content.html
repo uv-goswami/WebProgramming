@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h2 id="myText">This is the original text</h2>
+  <button id="myBtn">Click Me</button>
+
+  <script>
+    $('#myBtn').click(function() {
+      $('#myText').text("Text has been changed!");
+      $('#myText').css("color", "blue");
+    });
+  </script>
+
+</body>
+</html>
